@@ -11,19 +11,19 @@
 
         <fieldset>
             <legend>Личные данные </legend>
-            <input placeholder="Фамилия" type="text" pattern="^[А-Яа-яЁё]" required  id="lastname" autofocus><br>
-            <input placeholder="Имя" type="text" pattern="[А-Яа-яЁё]" required  id="lastname"><br>
-            <input placeholder="Отчество" type="text" pattern="[А-Яа-яЁё]" required  id="lastname" >
+            <input type="text" placeholder="Фамилия"  pattern="[А-Яа-яЁё]" required  size="25" autofocus><br>
+            <input type="text" placeholder="Имя"   pattern="[А-Яа-яЁё]" required  ><br>
+            <input type="text" placeholder="Отчество"  pattern="[А-Яа-яЁё]" size="24" required   >
 
             <fieldset>
               <legend>Паспортные данные </legend>
-              <input placeholder="АА" type="text" pattern="[A-Z]" required  id="lastname" maxlength="2">
-              <input placeholder="1234567" type="text" pattern="[0-9]{7}" required  id="lastname" maxlength="7">
+              <input placeholder="АА" type="text" pattern="[A-Z]" required   maxlength="2" size = "1" >
+              <input placeholder="1234567" type="text" pattern="[0-9]{7}" required   maxlength="7" size = "2" >
             </fieldset>
 
             <fieldset>
               <legend>Дата рождения </legend>
-              <input placeholder="2000" type="text"  pattern="[0-9]{4}" required  id="lastname" maxlength="2" ><br>
+              <input placeholder="2000" type="text"  pattern="[0-9]{4}" required   maxlength="4" size = "1" ><br>
 
               <div id="head2" >
                 <select id='gMonth2' onchange="show_month()">
@@ -43,14 +43,13 @@
                 </select> 
                 </div>
 
-                <input type="number" min="1" max="31" step="1" style="width:40px;float:left;">
+                <input type="number" min="1" max="31" step="1" >
                 
-
             </fieldset>
             <fieldset>
-                    <div id="head3" style="width: 40px;float:left;margin: left 20px;px;">
-                    <select id='gNational3' onchange="show_National()">
-                    <option value=''>--Select National--</option>
+                    <div size = "2">
+                    <select  onchange="show_National()">
+                    <option value=''></option>
                     <option selected value='1'>РБ</option>
                     <option value='2'>РФ</option>
                     <option value='3'>PL</option>
@@ -60,17 +59,78 @@
                     <option value='7'>UKR</option>
                     </select> 
                     </div>
-            </fieldset>
+            </fieldset>  
+
+        <fieldset>
+            <legend>Адрес</legend>
+            <textarea name="text_area" ></textarea>
+        </fieldset>     
+
+        </fieldset>
+        <fieldset>
+            <legend>Интересы</legend>
 
             <fieldset>
-                <input list = "guestlist">
-		<datalist id = "guestlist"> <!-- список предопределенных вариантов для ввода -->
-			<option value = "Вася"> </option><!-- закрывающие элементы </option> в данном случае можно не использовать -->
-			<option value = "Арик"> </option>
-			<option value = "Армен"> </option>
-		</datalist>
+                <legend>Хобби</legend>
+                <label>
+                    <input type="checkbox" name="hobby">Рыбалка
+                </label><br>
+                <label>
+                    <input type="checkbox" name="hobby">Астрономия
+                </label><br>
+                <label>
+                    <input type="checkbox" name="hobby">Дайвинг
+                </label><br>
+                <label>
+                    <input type="checkbox" name="hobby">Марки
+                </label><br>
             </fieldset>
+            <fieldset>
+                <legend>Домашние животные</legend>
+                
+                     <select   multiple  size="12">
+                    <optgroup label="Попугаи">
+                        <option value="1">Волнистый</option>
+                        <option value="2">Ара</option>
+                        <option value="3">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыбы">
+                        <option value="1">Караси</option>
+                        <option value="2">Окунь</option>
+                        <option value="3">Осетр</option>
+                    </optgroup>
+                    <optgroup label="Птицы">
+                        <option value="1">Птерадактель</option>
+                        <option value="2">Зимородок</option>
+                        <option value="3">Страус</option>
+                    </optgroup>                
 
+                </select>
+                              
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+             <input type = "text"   placeholder = "Логин" pattern="[A-Za-z0-9]{5,}" placeholder><br> 
+			 <input type = "password"   placeholder = "Пароль" pattern="[A-Za-z0-9]{10,}" placeholder><br>
+			
+        </fieldset>
+        <fieldset>
+            <legend>Координаты</legend>
+            <input type="email" placeholder = "введите адрес почты" ><br>
+            <input type="url" placeholder = "введите адрес сайта">
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+            <input type="number" min="-2.5" max="2.5" step="0.1" ><br>
+            <input type="range" min="1" max="10">
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить"><br>
+            <input type="image" src="email.jpg" width="50" height="50">
+            
         </fieldset>
 
     </form>
