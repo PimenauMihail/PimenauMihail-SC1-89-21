@@ -11,19 +11,19 @@
 
         <fieldset>
             <legend>Личные данные </legend>
-            <input type="text" placeholder="Фамилия"  pattern="[А-Яа-яЁё]" required  size="25" autofocus><br>
-            <input type="text" placeholder="Имя"   pattern="[А-Яа-яЁё]" required  ><br>
-            <input type="text" placeholder="Отчество"  pattern="[А-Яа-яЁё]" size="24" required   >
+            <input type="text" placeholder="Фамилия"  pattern="[А-Яа-яЁё]+" required  size="25" autofocus><br>
+            <input type="text" placeholder="Имя"   pattern="[А-Яа-яЁё]+" required  ><br>
+            <input type="text" placeholder="Отчество"  pattern="[А-Яа-яЁё]+" size="24" required   >
 
             <fieldset>
               <legend>Паспортные данные </legend>
-              <input placeholder="АА" type="text" pattern="[A-Z]" required   maxlength="2" size = "1" >
-              <input placeholder="1234567" type="text" pattern="[0-9]{7}" required   maxlength="7" size = "2" >
+              <input placeholder="АА" type="text" pattern="[A-Z]+" required   maxlength="2" size = "1" >
+              <input placeholder="1234567" type="text" pattern="[0-9]{7}+" required   maxlength="7" size = "3" >
             </fieldset>
 
             <fieldset>
               <legend>Дата рождения </legend>
-              <input placeholder="2000" type="text"  pattern="[0-9]{4}" required   maxlength="4" size = "1" ><br>
+              <input placeholder="2000" type="text"  pattern="[0-9]{4}+" required   maxlength="4" size = "1" ><br>
 
               <div id="head2" >
                 <select id='gMonth2' onchange="show_month()">
@@ -111,8 +111,8 @@
         </fieldset>
         <fieldset>
             <legend>Данные для входа и восстановления пароля</legend>
-             <input type = "text"   placeholder = "Логин" pattern="[A-Za-z0-9]{5,}" placeholder><br> 
-			 <input type = "password"   placeholder = "Пароль" pattern="[A-Za-z0-9]{10,}" placeholder><br>
+             <input type = "text"   placeholder = "Логин" pattern="[A-Za-z0-9]{5,}+" placeholder><br> 
+			 <input type = "password"   placeholder = "Пароль" pattern="[A-Za-z0-9]{10,}+" placeholder><br>
 			
         </fieldset>
         <fieldset>
