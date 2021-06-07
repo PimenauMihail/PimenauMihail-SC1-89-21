@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <form id="my form" name="user_data" method="POST|get" action="http://fe.it-academy.by/TestForm.php ">
+    <form name="user_data" method="POST" action="http://fe.it-academy.by/TestForm.php ">
         <h1 align="center"> Заполните анкету</h1>
 
         <fieldset>
@@ -25,8 +25,8 @@
               <legend>Дата рождения </legend>
               <input placeholder="2000" type="text"  pattern="[0-9]{4}+" required   maxlength="4" size = "1" ><br>
 
-              <div id="head2" >
-                <select id='gMonth2' onchange="show_month()">
+              <div  >
+                <select  >
                 <option value=''>--Select Month--</option>
                 <option selected value='1'>Январь</option>
                 <option value='2'>Февраль</option>
@@ -48,7 +48,7 @@
             </fieldset>
             <fieldset>
                     <div size = "2">
-                    <select  onchange="show_National()">
+                    <select  >
                     <option value=''></option>
                     <option selected value='1'>РБ</option>
                     <option value='2'>РФ</option>
