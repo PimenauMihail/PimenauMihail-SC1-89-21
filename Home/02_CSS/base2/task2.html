@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    
-
-
-        pre{
+        div.frame{
+            padding: 1em;
+            border-width: .5em;
+            border-color: rgb(44, 42, 42);
+            border-style: outset;
+            width: 400px;
+        }
+            pre{
             background-color: black;
             color:green;
             width: 400px;
             max-height: 4rem;   
-            overflow: auto;
+            overflow-y: initial; /* при auto появляется прокрутка и не исчезает*/
+           
            }
          
         
     </style>
 </head>
 <body>
-    
+   <div class="frame">
     
     <ul style="list-style-type: upper-roman; width: 350px;">
         <li><a> Контейнер с кодом</a>
@@ -49,6 +54,6 @@ name = raw_imput("What is your name?")
 print "Hello there, " + name + "!"
     </pre>       
     </div>
-   
+   </div> 
 </body>
 </html>
