@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .block{
+          
+            display: flex;
+            flex-direction: column;
+            background-color: thistle;
+            display: inline-flex;
+           
+            border: 5px outset  #9e9e9e;
+	        padding: 10px;
+            margin-bottom: 5px;
+
+
+        }
+        .content{
+            display: inline-flex;
+            flex-direction: row;
+            align-self: flex-start ;
+            background-color: rgb(224, 206, 206);
+            flex-wrap: nowrap;
+           
+
+        }
+        .content_row{
+            align-self: flex-start;
+            background-color: grey;
+            border-style:solid; border-width: 0em; width:50em; 
+           
+
+        }
+        .content_column{
+            align-items: stretch;
+            flex-direction: column;
+            
+        }
+        .content_column1{
+            flex-direction: column;
+            flex-basis: 80%;
+            display: inline-flex;
+            background-color: rgb(95, 87, 87);
+            align-items: flex-start;
+            border-style:solid; border-width: 0em; width:100%; 
+            
+
+
+        }
+        .clear{
+            clear: both;
+            height: .2em;
+            color: rgb(248, 242, 242);
+        }
+        .content_column2{
+            flex-direction: column;
+            flex-basis: auto;
+            display: inline-flex;
+            background-color:rgb(95, 87, 87);
+            align-items: flex-start;
+            border-style:solid; border-width: 0em; width: 100%; 
+
+        }
+        .footer{
+            background-color: rgb(42, 40, 40);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="content">
+            <div class="content_row">
+                <h2>
+                    Блок навигации
+                </h2>
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутсвовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным,чтобы по высоте он захватывал вторую статью, как показано в данном примере </li>
+                </ul>
+            </div>
+            <div class="content_column">
+                <div class="content_column1">
+                    <h2>
+                        Статья  1
+                    </h2>
+                    <p>Размер блока:
+                        Занимает всю доступную ширину
+                        Должен присутствовать цвет фона
+                        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи
+                        свойства margin-bottom</p>
+                </div>
+                <div class="clear"></div>
+                <div class="content_column2">
+                    <h2>
+                        Статья 2
+                    </h2>
+                    <p>Размер блока:
+                        Занимает всю доступную ширину
+                        Должен присутствовать цвет фона
+                        Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи
+                        свойства margin-bottom Картинка вставленна при помощи тега, плаванье
+                        организованно по правому краю внутри данной статьи для этой картинки
+                    
+                    <img src="icon_mail.png" style="float: right;" >
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p> Нижний болк,подвал. Занимает всю доступную ширину. высота определяется помещенны внутрь контентом</p>
+        </div>
+    </div>
+</body>
+</html>

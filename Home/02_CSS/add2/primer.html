@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            height: 100%;
+            overflow: hidden;
+            min-height: 100%;
+            padding: 50px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .block{
+            
+
+        }
+        .block_row{
+            flex-direction: row;
+            align-items: center;
+            border: 20px solid yellow;
+            margin: 0px 0px 20px 0px;
+            
+        }
+        .block_column_1{
+            order: 3;
+
+        }
+        .block_column_2{
+           order: 2;
+
+        }
+        .block_column_3 {
+            order: 1;
+
+        }  
+        .block_column{
+            border: 20px solid #5e5373;
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+        .block_item{
+            background-color: turquoise;
+            padding: 50px;
+            font-size: 50px;
+            color: #fff;
+            font-weight: 700;
+        }
+    </style>
+
+
+</head>
+<body>
+   
+    <div class="wrapper" >
+        <div class="blok">
+            <div class="block_row">
+                 <div class="block_column block_column_1">
+                     <div class="block_item">1</div>
+                 </div>
+
+                 <div class="block_column block_column_2">
+                     <div class="block_item">2</div>
+                 </div>
+
+                 <div class="block_column block_column_3">
+                     <div class="block_item">3</div>
+                 </div>            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
