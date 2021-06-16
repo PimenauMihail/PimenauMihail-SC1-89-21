@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+* { 
+    padding: 0;
+    margin: 0;}
+
+@media all and (min-width: 774px){
+
+nav ul{
+    list-style: none;
+}       
+nav > ul > li{
+    float: left;
+    border: solid black .05px;
+    background-color: rgb(179, 170, 170);
+}
+nav ul::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 10px 20 px;
+    text-decoration: none;
+    color: black;
+    width: 125px;
+    border: solid black .05px;
+    background-color: rgb(179, 170, 170);
+    
+}
+nav ul li a:hover{
+    background-color: gray;
+}
+nav ul > li:hover > ul a{
+  opacity: 1;
+}
+nav ul > li:hover > ul li{
+  
+  transition: height 0.8s, opacity 0.4s;
+  transition:height
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+
+}
+
+@media all and (max-width: 774px){
+
+nav ul{
+    display:block;
+    width: 100%;
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    position:relative;
+}
+nav ul li{
+    display:block; 
+    width: 125px;        
+    position:relative;
+    border: solid black .005px;
+    background-color: rgb(179, 170, 170);
+} 
+     
+nav ul li a{
+    display: inline-block;
+    padding: 10px 20 px;
+    text-decoration: none;
+    color: black;
+    width: 125px;
+    border: solid black .005px;
+    background-color: rgb(179, 170, 170);
+}
+
+           
+nav ul li a:hover, nav ul li:hover a{
+    background-color:rgb(179, 170, 170);
+}
+
+nav ul li ul{
+    position:absolute;
+    top:0px;
+    left:100%;
+    display:none;
+    width: 125px;;
+}
+
+            
+nav ul li:hover ul{display:block;}
+nav ul li ul li a{
+    display: inline-block;
+    padding: 10px 20 px;
+    text-decoration: none;
+    color: black;
+    width: 125px;
+    border: solid black .005px;
+    background-color: rgb(179, 170, 170);
+}
+
+nav ul li ul li a:hover{
+    background:grey;
+    color:black;
+}
+}
+
+   </style>
+</head>
+<body>
+    <nav>
+        <ul >
+            <li><a href="">Понедельник</a>
+                <ul>
+                    <li><a href="">Завтрак</a></li>
+                    <li><a href="">Обед</a></li>
+                    <li><a href="">Ужин</a></li>
+                </ul>
+            </li>
+
+            <li><a href="">Вторник</a>
+                <ul>
+                    <li><a href="">Завтрак</a></li>
+                    <li><a href="">Обед</a></li>
+                    <li><a href="">Ужин</a></li>
+                </ul>
+            </li>
+            <li><a href="">Среда</a>
+                <ul>
+                    <li><a href="">Завтрак</a></li>
+                    <li><a href="">Обед</a></li>
+                    <li><a href="">Ужин</a></li>
+                </ul>
+            </li>
+            <li><a href="">Четверг</a>
+                <ul>
+                    <li><a href="">Завтрак</a></li>
+                    <li><a href="">Обед</a></li>
+                    <li><a href="">Ужин</a></li>
+                </ul>
+            </li>
+            <li><a href="">Пятница</a>
+                <ul>
+                    <li><a href="">Завтрак</a></li>
+                    <li><a href="">Обед</a></li>
+                    <li><a href="">Ужин</a></li>
+                </ul>
+            </li>
+            <li><a href="">Суббота</a>
+                <ul>
+                    <li><a href="">Завтрак</a></li>
+                    <li><a href="">Обед</a></li>
+                    <li><a href="">Ужин</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            border: .5em outset ;
+            padding: 1em;
+            width: 45em;
+        }
+        p{
+            border: .1em solid;
+            border-radius: 0px 15px 0px 15px;
+            padding: .5em;
+        }
+        ul{
+            list-style-type: none ;
+        }
+        li a:hover::before{
+            content: url(pic/logo-list.jpg);
+           
+        }
+
+        a[href*="files/document.doc"]::after{
+            content: url("pic/logo-doc.jpg") ;
+        }
+        a[href*="files/document.pd"]::after{
+            content: url("pic/logo-pdf.png");
+        }
+        a[href*="files/document.zip"]::after{
+            content: url("pic/logo-zip.gif");
+        }
+        a[href*="https://ru.wikipedia.org/wiki/Doc"]::before{
+            content: url("pic/extref.png");
+        }
+        a[href*="https://ru.wikipedia.org/wiki/pdf"]::before{
+            content: url("pic/extref.png");
+        }
+        a[href*="https://ru.wikipedia.org/wiki/zip"]::before{
+            content: url("pic/extref.png");
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Форматы файлов.</h2>
+    <p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/Doc" target="_blank" >document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+    <a href="files/document.doc">Документ MS Word</a>
+    </p>
+
+
+    <p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+    <br>
+    <a href="files/document.pdf">Документ PDF</a>
+    </p>
+
+    <p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/zip" target="_blank">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+    <br>
+    <a href="files/document.zip">Архив</a>
+    </p>
+    <h3>Это список из файлов</h3>
+    <ul>
+        <li><a href="files/document.doc">Документ MS Word</a></li>
+        <li><a href="files/document.pdf">Документ PDF</a></li>
+        <li><a href="files/document.zip">Архив</a></li>
+    </ul>
+</body>
+</html>
