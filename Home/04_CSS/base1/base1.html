@@ -22,7 +22,8 @@
         li a:hover::before{
             content: url(pic/logo-list.jpg);
            
-        }
+        } 
+       
 
         a[href*="files/document.doc"]::after{
             content: url("pic/logo-doc.jpg") ;
@@ -41,7 +42,9 @@
         }
         a[href*="https://ru.wikipedia.org/wiki/zip"]::before{
             content: url("pic/extref.png");
+            
         }
+       /* пока не получается убрать значек в конце ссылок в списке*/
         
     </style>
 </head>
@@ -63,9 +66,9 @@
     </p>
     <h3>Это список из файлов</h3>
     <ul>
-        <li><a href="files/document.doc">Документ MS Word</a></li>
-        <li><a href="files/document.pdf">Документ PDF</a></li>
-        <li><a href="files/document.zip">Архив</a></li>
+        <li class="Word"><a href="files/document.doc">Документ MS Word</a></li>
+        <li class="PDF"><a href="files/document.pdf">Документ PDF</a></li>
+        <li class="ZIP"><a href="files/document.zip">Архив</a></li>
     </ul>
 </body>
 </html>
